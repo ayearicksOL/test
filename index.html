@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/e822198573.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.otherlevels.com/js-sdk/otherlevels.css?appKey=52743aad3f76c8e777e5c44bba0870ec">
+    <link rel="stylesheet" href="style.css">
+    <link rel="text/javascript" href="/ol-service-worker.js">
+    
+</head>
+<body>
+
+    <button id="register">Complete Registration</button>
+
+    <form id="form">
+        <label for="firstName">First Name:</label>
+        <input type="text" name="firstName" id="firstName" />
+        <button type="submit">Submit</button>
+    </form>
+
+
+    <div class="ol-modal" data-ol-trigger="timed" data-ol-trigger-delay="20">
+        <div class="wrapper">
+            <div class="container">
+                <img src="coins.jpg" alt="assorted coins" id="coins">
+            </div>
+            <div class="container">
+                <img src="MPXXOLV_Logo.png" alt="OtherLevels" id="logo">
+                <h3>Would you like to be notified of your next prize?</h3>
+                <p>Don't miss your next chance to bet again.</p>
+                <div class="ol-footer">
+                    <a href="otherlevels://notification-prompt-yes" id="accept">
+                        <span><i class="fas fa-check-circle"></i></span>
+                        <span class="btn-text">Accept</span>
+                    </a>
+                    <a href="otherlevels://notification-prompt-no" id="later">
+                        <span><i class="fas fa-clock"></i></span>
+                        <span class="btn-text">Ask Me Later</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+        <!-- <div class="soft-opt-in">
+            <div class="soft-main">
+                <div class="soft-main-content">
+                    <div class="soft-main-media">
+                        <span><i class="fas fa-bell"></i></span>
+                    </div>
+                    <div class="soft-main-label">
+                        <span class="soft-main-label-title"></span>
+                        <span class="soft-main-label-desc"></span>
+                    </div>
+                </div>
+                <div class="soft-main-actions">
+                    <a class="soft-no" href="otherlevels://notification-prompt-no">
+                        <div class="soft-main-label">
+                            <div class="soft-main-label-title">Ask Me Later</div>
+                        </div>
+                    </a>
+                    <a class="soft-yes" href="otherlevels://notification-prompt-yes">
+                        <div class="soft-main-label">
+                            <div class="soft-main-label-title">Accept</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
