@@ -21,26 +21,6 @@ _ol('create', '52743aad3f76c8e777e5c44bba0870ec', options, function()
         console.log('Tracking ID is ' + ol_tid);
     });
     
-    _ol('askForPermission', 'notification', function(result)
-    {
-         _ol('displayInterstitial', 'App Open', 
-         {
-             'click accept': function(event, context) 
-             {
-
-             }
-         },
-
-         {
-             'click ignore': function(event, context) 
-             {
-                 
-             }
-         }, 
-         onDismiss, onLoaded, onNotFound)
-
-         
-    });
 
 }); 
 
@@ -77,6 +57,25 @@ form.addEventListener('submit', function(e)
     e.preventDefault();
 });
 
+_ol('askForPermission', 'notification', function(result)
+    {
+         _ol('displayInterstitial', 'App Open', 
+         {
+             'click accept': function(event, context) 
+             {
 
+             }
+         },
+
+         {
+             'click ignore': function(event, context) 
+             {
+                 
+             }
+         }, 
+         onDismiss, onLoaded, onNotFound)
+
+         
+    });
 
 
