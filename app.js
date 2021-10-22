@@ -26,7 +26,9 @@ _ol('create', '52743aad3f76c8e777e5c44bba0870ec', options, function()
          {
              'click accept': function(event, context) 
              {
-
+                 _ol('registerEvent', 'clickedAccept', 'acceptClicked', function(){
+                     console.log('Event registered');
+                 })
              }
          },
 
@@ -47,7 +49,6 @@ const button = document.getElementById('register')
 
 button.addEventListener('click', function(e)
 {
-
 
     _ol('registerEvent', 'registrationCompleted', 'registrationCompleted', function()
     {
