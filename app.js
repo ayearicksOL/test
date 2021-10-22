@@ -22,24 +22,7 @@ _ol('create', '52743aad3f76c8e777e5c44bba0870ec', options, function()
 
     _ol('askForPermission', 'notification', function(result)
     {
-         _ol('displayInterstitial', 'App Open', 
-         {
-             'click accept': function(event, context) 
-             {
-                 _ol('registerEvent', 'clickedAccept', 'acceptClicked', function(){
-                     console.log('Event registered');
-                 })
-             }
-         },
-
-         {
-             'click ignore': function(event, context) 
-             {
                  
-             }
-         })
-
-         
     });
     
 
